@@ -1,0 +1,93 @@
+/* تنظیمات اولیه */
+body {
+    background-color: #10161f;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 24px;
+    color: azure;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 15px;
+    color: #7e8997;
+}
+
+h3{
+    font-size: 15px;
+    color: #7e8997;
+}
+
+#seedForm {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    color: #808a99;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.input-group {
+    position: relative; /* افزودن موقعیت نسبی برای قرار دادن برچسب به صورت مطلق */
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+label {
+    position: absolute; /* موقعیت مطلق برای قرار دادن برچسب داخل کادر ورودی */
+    left: 10px; /* فاصله از سمت چپ کادر ورودی */
+    top: 50%; /* مرکز عمودی */
+    transform: translateY(-50%); /* تنظیم دقیق مرکزیت */
+    pointer-events: none; /* جلوگیری از تداخل کلیک با برچسب */
+    color: #808a99; /* رنگ متن برچسب */
+    font-weight: bold; /* ضخامت فونت برچسب */
+    background-color: transparent; /* شفاف بودن پس‌زمینه برچسب */
+}
+
+input[type="text"] {
+    color: beige;
+    font-style: normal;
+    background-color: #1d2633;
+    border: none;
+    border-radius: 7px;
+    width: 180px;
+    padding: 10px;
+    padding-left: 35px; /* افزودن فضای خالی برای برچسب */
+    box-sizing: border-box; /* اطمینان از محاسبه صحیح padding */
+}
+
+.button-container {
+    background-color: #45aef5;
+    display: flex;
+    justify-content: center; /* مرکز قرار دادن دکمه */
+    margin-top: 20px;
+    border-radius: 9px;
+}
+
+button {
+    padding: 15px 30px; /* تغییر اندازه دکمه */
+    font-size: 18px;    /* تغییر اندازه متن دکمه */
+    cursor: pointer;
+    background-color: #45aef5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45aef5;
+}
